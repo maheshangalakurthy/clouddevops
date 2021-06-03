@@ -57,10 +57,8 @@ pipeline{
         stage("Tomcat Deployment"){
             steps{
                
-                deploy adapters: [tomcat9(credentialsId: 'admintomcat', path: '', url: 'http://35.154.15.15:8090')], contextPath: null, war: 'target/*.war'
-            }
+deploy adapters: [tomcat9(credentialsId: 'admintomcat', path: '', url: 'http://35.154.15.15:8090/manager/html')], contextPath: null, war: 'target/*.war'            }
         }
-
         
     }
     post{
