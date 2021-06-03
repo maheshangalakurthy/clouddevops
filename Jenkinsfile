@@ -42,6 +42,7 @@ pipeline{
             post{
                 always{
                     echo "========Maven Build Done========"
+                    cleanWs()
                 }
                 success{
                     echo "========Maven Build Done========"
