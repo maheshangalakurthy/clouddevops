@@ -9,6 +9,10 @@ pipeline{
     triggers{
         pollSCM('* * * * *')
     }
+    tools {
+        maven 'Maven3'
+       // jdk 'jdk8'
+    }
     stages{
         stage("Git Checkout"){
             steps{
@@ -31,8 +35,9 @@ pipeline{
         stage('Maven Build'){
             steps{
             echo "=========== Maven Build =============="
-            tool name: 'maven3', type: 'maven'
+            //tool name: 'maven3', type: 'maven'
             sh "mvn package"
+            
             }
             post{
                 always{
