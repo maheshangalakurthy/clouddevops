@@ -53,6 +53,14 @@ pipeline{
             }
 
         }
+
+        stage("Tomcat Deployment"){
+            steps{
+                echo "========Tomcat Deployment============"
+                sh "deploy adapters: [tomcat9(credentialsId: 'manager', path: '', url: 'http://35.154.15.15:8080/')], contextPath: null, war: 'target/*.war'"
+            
+            }
+        }
     }
     post{
         always{
