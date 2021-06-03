@@ -58,7 +58,6 @@ pipeline{
             steps{
                
                 deploy adapters: [tomcat9(credentialsId: 'admintomcat', path: '', url: 'http://35.154.15.15:8090')], contextPath: null, war: 'target/*.war'
-               
             }
         }
 
