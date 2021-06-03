@@ -57,6 +57,7 @@ pipeline{
     post{
         always{
             echo "========always========"
+            junit 'target/surefire-reports/TEST-in.javahome.myweb.controller.CalculatorTest.xml'
         }
         success{
             echo "========pipeline executed successfully ========"
