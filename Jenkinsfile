@@ -28,9 +28,23 @@ pipeline{
             }
         }
 
-        stage{
+        stage('Maven Build'){
+            steps{
             echo "=========== Maven Build =============="
             sh "mvn --version"
+            }
+            post{
+                always{
+                    echo "========Maven Build Done========"
+                }
+                success{
+                    echo "========Maven Build Done========"
+                }
+                failure{
+                    echo "========Maven Build failed========"
+                }
+            }
+
         }
     }
     post{
