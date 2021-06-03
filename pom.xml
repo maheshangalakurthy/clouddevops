@@ -1,18 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>in.javahome</groupId>
+	<groupId>click.clouddevops</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
 	<version>8.3.2</version>
-	<name>Java Home myweb</name>
+	<name>Clouddevops myweb</name>
 	<url>http://maven.apache.org</url>
 	
 	
 	
 	
 	<properties>
-		<docker.image.prefix>kammana</docker.image.prefix>
+		<docker.image.prefix>Clouddevops</docker.image.prefix>
 		<maven.compiler.source>6</maven.compiler.source>
    		<maven.compiler.target>1.6</maven.compiler.target>
 
@@ -28,7 +28,7 @@
 		</dependency>
 
 	</dependencies>
-	
+	<!--
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
@@ -40,6 +40,7 @@
 		    <url>https://nexus.clouddevops.click/repository/maven-releases/</url>
 		</repository>
   	</distributionManagement>
+        -->
 	
 	<pluginRepositories>
 	    <pluginRepository>    
