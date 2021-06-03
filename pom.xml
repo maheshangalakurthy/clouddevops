@@ -4,7 +4,7 @@
 	<groupId>click.clouddevops</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
-	<version>8.3.2</version>
+	<version>1.0</version>
 	<name>Clouddevops myweb</name>
 	<url>http://maven.apache.org</url>
 	
