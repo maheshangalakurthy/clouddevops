@@ -31,7 +31,8 @@ pipeline{
         stage('Maven Build'){
             steps{
             echo "=========== Maven Build =============="
-            sh "mvn --version"
+            //tool name: 'maven3', type: 'maven'
+            sh "mvn package"
             }
             post{
                 always{
