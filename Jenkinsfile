@@ -6,6 +6,9 @@ pipeline{
         timestamps()
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
+    triggers{
+        pollSCM('* * * * *')
+    }
     stages{
         stage("Git Checkout"){
             steps{
@@ -23,6 +26,11 @@ pipeline{
                     echo "========Checkout is failed========"
                 }
             }
+        }
+
+        stage{
+            echo "=========== Maven Build =============="
+            sh "mvn --version"
         }
     }
     post{
