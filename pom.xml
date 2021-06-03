@@ -5,7 +5,7 @@
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>Clouddevops myweb</name>
+	<name>Clouddevops-myweb</name>
 	<url>http://maven.apache.org</url>
 	
 	
