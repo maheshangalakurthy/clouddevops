@@ -24,6 +24,11 @@ pipeline{
                 }
             }
         }
+
+        stage{
+            echo "=========== Maven Build =============="
+            sh "mvn --version"
+        }
     }
     post{
         always{
